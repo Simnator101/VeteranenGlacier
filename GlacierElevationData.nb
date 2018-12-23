@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      8038,        203]
-NotebookOptionsPosition[      7717,        187]
-NotebookOutlinePosition[      8064,        202]
-CellTagsIndexPosition[      8021,        199]
+NotebookDataLength[      9179,        226]
+NotebookOptionsPosition[      8752,        210]
+NotebookOutlinePosition[      9095,        225]
+CellTagsIndexPosition[      9052,        222]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -122,38 +122,50 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"{", 
       RowBox[{
-       RowBox[{"lijst7", "[", 
-        RowBox[{"[", "i", "]"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{"lijst7", "[", 
+         RowBox[{"[", "i", "]"}], "]"}], " ", "-", " ", 
+        RowBox[{
+        "lijst7", "\[LeftDoubleBracket]", "5", "\[RightDoubleBracket]"}]}], 
+       ",", 
        RowBox[{"lijst3", "[", 
         RowBox[{"[", "i", "]"}], "]"}]}], "}"}], ",", 
      RowBox[{"{", 
-      RowBox[{"i", ",", "1", ",", 
+      RowBox[{"i", ",", "5", ",", 
        RowBox[{"Length", "[", "lijst3", "]"}]}], "}"}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
- RowBox[{"ListPlot", "[", "lijst8", "]"}]}], "Input",
+ RowBox[{"ListPlot", "[", "lijst8", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
+    "\"\<glacierelevationdata.txt\>\""}], ",", " ", "lijst8", ",", " ", 
+   "\"\<CSV\>\""}], "]"}]}], "Input",
  CellChangeTimes->{{3.7544632357832685`*^9, 3.754463490524288*^9}, {
   3.754463582379738*^9, 3.7544636544361143`*^9}, {3.754463753908203*^9, 
   3.7544640745729914`*^9}, {3.7544642640045977`*^9, 3.754464281844907*^9}, {
   3.7544643679018555`*^9, 3.754464423445376*^9}, {3.7544644569089212`*^9, 
   3.75446451746006*^9}, {3.7544645524046435`*^9, 3.7544645559641294`*^9}, {
   3.7544646173011866`*^9, 3.7544646429416122`*^9}, {3.7544646855347514`*^9, 
-  3.754464918941801*^9}}],
+  3.754464918941801*^9}, {3.754564299665086*^9, 3.7545643419837036`*^9}, {
+  3.754564386779645*^9, 3.7545644482942853`*^9}, {3.7545645099228306`*^9, 
+  3.7545645152770452`*^9}},
+ CellLabel->"In[42]:=",ExpressionUUID->"a5fbb54b-2ce4-4d47-a227-7c9a74ff24bb"],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, 
     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
       AbsoluteThickness[1.6], PointBox[CompressedData["
-1:eJxTTMoPSmViYGBQBWIQjQJ+9Dqwlv67zcgywwHM7+h1+HZQeyXfn2UQ/oF+
-h217is0erdgA4Z+Z4HBGv1plhfA2CL9hooPfEcEJF17sgvB1Jjps3Ts5cWPK
-AQj/xgSHaw+t596tOALnl2W+1ZwvegLC55jgYDNPUj3F7DSE/6HHQZM3LETM
-/RyEb9Dj8Gzuaxv2DxcgfIluh/ZgvRSN4ksQ/otOB6mmM91H3l6G8AM6HWZk
-b71advQqhM/Q4TCB+WeTRuJ1qP52h+9prb8Pa9+E8He0OsxrXrNXeuttCF+g
-xYG7f+2CqON3ofJNDgI3n9XNcnoADZ8Ghz6m0NVzuh5Cw6fOIYih5PeOrEcQ
-vkONw+m9cdkdBY+h/AqH97qXp14zegLhF5Q49Mp3zDkp/RTCTyhyKA2YWe/5
-Eso/kOOg2D/l7gnfZ1D5LIe1HQxnE1ZB+QvSHeztNFJecT6Hyic7HI2/M7G8
-AMp3SHDosnIUnvcJxg9wqGu+tmR5/QtoeFg4hE8vfBSr8hLKV3J4anvkvxXb
-KyifwaHo3jkd9p1wPsMlCU/Zijmv4fwpzg4F07zewPQfAACyX7wf
-      "]]}, {}}, {}},
+1:eJxTTMoPSmViYGBQBGIQjQIaJjpwBEWtWxgy2QHM15noYDM9wrY0eymEf2OC
+w4PJf0SF722C8xUWx+tPE98F4XNMcAhjuyMyQecAhP+hx8G5VMLJyfYwhG/Q
+4/Bs8cx0q2vHIHyJbgcNfvltNXdOQvgvOh38cqJZt148A+EHdDosnT/tTI/D
+BQifocNhrvmtSrs7F6H62x1YZqd9urnsMoS/o9Vh9fbeLYYG1yB8gRYHicN9
+0wucbkDlmxx0n6374sVwG8LvaHDQtOz29Z9wF8I/UOew0eTk2/aA+xC+Q43D
+pfDzacLrHkD5FQ7fjjtPTCx4COEXlDhM2fljekjkIwg/ocih5hVn9RW1x1Dz
+chw0NFlvBndD+QlZDluUCk+8fg7lL0h3cLsxI77U/QlUPtnhzE+fXqZ1UL5D
+gsOEKxv5NA2eQvkBDi2y7guM9kL5DBYOcYaP7r5IfAblKzm8uW7y+6jzcygf
+6OIKe41J3+B8hhubdkow33oB58+6uyFbseMlTP8BAP9xo5g=
+      "]]}, {}}, {}, {}, {}, {}},
   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
   Axes->{True, True},
   AxesLabel->{None, None},
@@ -165,8 +177,17 @@ KyifwaHo3jkd9p1wPsMlCU/Zijmv4fwpzg4F07zewPQfAACyX7wf
   GridLines->{None, None},
   GridLinesStyle->Directive[
     GrayLevel[0.5, 0.4]],
-  Method->{},
-  PlotRange->{{0, 57940.70120251845}, {-9., 1120.}},
+  ImagePadding->All,
+  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0, 52289.04439585954}, {-9., 1120.}},
   PlotRangeClipping->True,
   PlotRangePadding->{{
      Scaled[0.02], 
@@ -182,12 +203,14 @@ KyifwaHo3jkd9p1wPsMlCU/Zijmv4fwpzg4F07zewPQfAACyX7wf
    3.7544642823146505`*^9}, {3.7544644672093844`*^9, 3.7544645068095303`*^9}, 
    3.7544645564677763`*^9, {3.754464619272884*^9, 3.7544646457042265`*^9}, {
    3.754464686436346*^9, 3.7544647009864445`*^9}, {3.754464772218026*^9, 
-   3.754464919762636*^9}}]
+   3.754464919762636*^9}, 3.754564215205354*^9, 3.754564300836931*^9, 
+   3.7545643436712217`*^9, 3.7545644552490854`*^9, 3.7545645163251133`*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"cf44a873-3cb2-44f9-a395-d48babddcee2"]
 }, Open  ]]
 },
 WindowSize->{759, 833},
 WindowMargins->{{Automatic, 259}, {27, Automatic}},
-FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -202,12 +225,10 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 5111, 117, 572, "Input"],
-Cell[5694, 141, 2007, 43, 263, "Output"]
+Cell[580, 22, 5701, 130, 542, "Input",ExpressionUUID->"a5fbb54b-2ce4-4d47-a227-7c9a74ff24bb"],
+Cell[6284, 154, 2452, 53, 232, "Output",ExpressionUUID->"cf44a873-3cb2-44f9-a395-d48babddcee2"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
