@@ -357,23 +357,23 @@ def esl_step_func(t):
 if __name__ is "__main__":   
     glac = Glacier()
     lengths = np.linspace(1., 10e3, 100)
-    equi_vals = np.genfromtxt(".\\ELA_Spitsbergen.txt").T
+    equi_vals = np.genfromtxt("./ELA_Spitsbergen.txt").T
     
     # Test custom bed with ESL data
     # This doesn't yet seem to work
-    c_geom= np.genfromtxt(".\\glacierelevationdata.txt", delimiter=',').T
-    lengths = np.linspace(0.1, c_geom[0,-2], 1000)
+    c_geom= np.genfromtxt("./elevation_1.txt", delimiter=' ')
+    lengths = np.linspace(0.1, c_geom[0,-1], 1000)
 #    glac.set_glacier_properties(calving_frac=.7, alpha=.5, mean_gletsjer_w=2930.)
     glac.create_custom_bed(c_geom[0], c_geom[1])
-    
-    buckets = np.genfromtxt(".\\Glacierbuckets.csv", delimiter=';', skip_header=1)[:,1:]
-    for buc in buckets:
-        glac.add_bucket(buc[0], buc[1], buc[2], buc[5], buc[6])  
+    glac.set_glacier_properties(alpha=1.2, calving_param=1.2, mean_gletsjer_w=2.93e3)
+#    buckets = np.genfromtxt("./Glacierbuckets.csv", delimiter=';', skip_header=1)[:,1:]
+#    for buc in buckets:
+#        glac.add_bucket(buc[0], buc[1], buc[2], buc[5], buc[6])  
     
     # Calibrate the Winter values for the current Glacier length
     glac.generate_profile(lengths, True, "Veteranen Glacier Bed")
-    glac.set_length(10.)
-    glac.simulate(len(equi_vals[0]), lambda t : 1130.,
+    glac.set_length(1.)
+    glac.simulate(len(equi_vals[0]), esl_data,
                   calving_enabled=True,
                   plot=True,
                   plot_forcing=True,
